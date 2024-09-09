@@ -12,7 +12,7 @@ pool:
 steps:
 - task: UiPathPack@4
   inputs:
-    versionType: 'CurrentVersion'
+    versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)'
     outputType: 'Process'
     orchestratorConnection: 'OrchConnection'
