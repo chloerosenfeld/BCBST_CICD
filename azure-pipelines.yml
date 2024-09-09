@@ -18,3 +18,8 @@ steps:
     orchestratorConnection: 'OrchConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     traceLevel: 'Information'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'BuildPipelineArtifact'
+    publishLocation: 'Container'
