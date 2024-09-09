@@ -17,5 +17,4 @@ steps:
     outputType: 'Process'
     orchestratorConnection: 'OrchConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-    runWorkflowAnalysis: false
     traceLevel: 'Information'
